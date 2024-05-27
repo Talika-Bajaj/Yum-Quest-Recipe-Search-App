@@ -128,11 +128,11 @@
 
     /* main */
     .card {
-        width: 273px;
+        width: 300px;
     }
 
     .dishes {
-        grid-template-columns: 238px;
+        grid-template-columns: 245px;
     }
 
     .related-articles {
