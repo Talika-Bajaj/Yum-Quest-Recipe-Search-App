@@ -1,0 +1,173 @@
+@media screen and (min-width: 400px) {
+
+    /* header */
+    header {
+        padding: 20px 25px;
+    }
+
+    ul li a h1 {
+        font-size: 34px;
+    }
+
+    ul li a h2 {
+        font-size: 24px;
+    }
+
+    /* main */
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .intro p {
+        font-size: 17px;
+    }
+
+    .radio-group {
+        grid-template-columns: auto auto;
+    }
+
+    .buttons {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 550px) {
+
+    /* main */
+    main {
+        padding: 30px;
+    }
+
+    .intro h1 {
+        font-size: 48px;
+    }
+
+    .intro p {
+        /* color: lightcoral; */
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .radio-group {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+@media screen and (min-width: 650px) {
+
+    /* main */
+    .search-bar {
+        width: 548px;
+    }
+
+    .filter-options {
+        /* width: 75%; */
+        width: 560px;
+
+    }
+}
+
+@media screen and (min-width: 780px) {
+
+    /* footer */
+    footer {
+        padding: 65px 70px;
+        gap: 25px
+    }
+
+    .footer {
+        grid-template-columns: 50% 50%;
+        gap: 25px 70px;
+    }
+
+    .foot-four {
+        align-items: baseline;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+
+    /* main */
+    .content {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .card {
+        width: 330px;
+    }
+
+    .dishes {
+        grid-template-columns: 260px;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    .related-articles,
+    .famous-recipes {
+        display: flex;
+    }
+
+    /* footer */
+    .footer {
+        grid-template-columns: 36% 16% 16% 16%;
+        gap: 58px;
+        align-items: flex-start;
+    }
+
+    .copy {
+        text-align: right;
+    }
+}
+
+
+@media screen and (min-width: 1240px) {
+
+    /* main */
+    .card {
+        width: 273px;
+    }
+
+    .dishes {
+        grid-template-columns: 238px;
+    }
+
+    .related-articles {
+        display: none;
+    }
+
+    /* footer */
+    .footer {
+        grid-template-columns: 36% 16% 16% 17%;
+        gap: 71px;
+        align-items: flex-start;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+
+    /* main */
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    #cards {
+        gap: 50px
+    }
+
+    .card {
+        width: 320px;
+    }
+
+    .dishes {
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    .famous-recipes {
+        display: none;
+    }
+}
