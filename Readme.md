@@ -1,4 +1,4 @@
-# YumQuest - Recipe Search App
+# Yum Quest - Recipe Search App
 
 ![Design preview for the Note App](Preview.PNG)
 
