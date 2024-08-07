@@ -11,6 +11,10 @@
     --Very_Dark_Cyan: hsl(192, 100%, 9%);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     color: white;
     background-color: var(--Very_Dark_Cyan);
@@ -35,11 +39,12 @@ nav ul li a {
     transition: all 0.3s ease-in;
 }
 
-nav ul li a h2 {
+#focus-search {
     font-size: 22px;
+    font-weight: 700;
 }
 
-nav ul li h2:hover {
+#focus-search:hover {
     text-decoration: underline;
 }
 
