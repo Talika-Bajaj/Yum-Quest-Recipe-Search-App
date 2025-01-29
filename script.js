@@ -4,6 +4,7 @@ const filterBtn = document.getElementById('filter');
 const filters = document.querySelector('.filter-options');
 const allCuisines = document.querySelectorAll('.cuisine-name');
 const searchHeading = document.getElementById('search-heading');
+const overlayDiv = document.querySelector('.overlay');
 const cards = document.getElementById('cards');
 const close = document.getElementById('close');
 const message = document.getElementById('message');
@@ -58,8 +59,15 @@ async function fetchRecipe(cuisine) {
 
 
 //search btn - magnify
-searchBtn.addEventListener('click', setUrl);
-
+searchBtn.addEventListener('click', () => {
+    overlayDiv.style.display = "flex";
+    setTimeout(() => {
+        setUrl();
+        overlayDiv.style.display = "none";
+        
+    }, 3000);
+    
+});
 
 //show/hide filter options
 filterBtn.addEventListener('click', () => {
@@ -116,7 +124,17 @@ searchRecipe();
 
 
 //filter search btn 
-document.getElementById('filter-search').addEventListener('click', setUrl);
+document.getElementById('filter-search').addEventListener('click', () => {
+    overlayDiv.style.display = "flex";
+    setTimeout(() => {
+        setUrl();
+        // overlayDiv.style.display = "none";
+        
+    }, 3000);
+    
+    filters.style.display = 'none';
+
+});
 
 
 //function to create url based on values given

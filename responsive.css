@@ -68,6 +68,13 @@
     }
 }
 
+@media screen and (width >= 768px) {
+    
+.loader {
+    left: 43%;
+    }
+}
+
 @media screen and (min-width: 780px) {
 
     /* footer */
